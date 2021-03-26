@@ -40,7 +40,62 @@
         <img src="{{ mars_data.featured_image_url }}" alt="" width="100%">
       </div>
       <div class="col-sm-6 col-lg-6 image">
-        {{ mars_data.mars_df}}
+        <table border="1" class="dataframe">
+          <thead>
+            <tr style="text-align: right;">
+              <th></th>
+              <th></th>
+              <th>Mars</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>0</th>
+              <td>Equatorial Diameter:</td>
+              <td>6,792 km</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>Polar Diameter:</td>
+              <td>6,752 km</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Mass:</td>
+              <td>6.39 × 10^23 kg (0.11 Earths)</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Moons:</td>
+              <td>2 (Phobos &amp; Deimos)</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td>Orbit Distance:</td>
+              <td>227,943,824 km (1.38 AU)</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td>Orbit Period:</td>
+              <td>687 days (1.9 years)</td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td>Surface Temperature:</td>
+              <td>-87 to -5 °C</td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td>First Record:</td>
+              <td>2nd millennium BC</td>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td>Recorded By:</td>
+              <td>Egyptian astronomers</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
     <br>
@@ -54,9 +109,7 @@
       <br>
       <div class="row">
         <div class="col-md-6">
-          <div class="thumbnail">
-            <a href="#" target="_blank">
-              <img src="{{ mars_data.img_url0 }}" alt="" style="width:100%">
+              <img src="{{ mars_data.hemisphere_image_urls[0]['img_url{0}'] }}" alt="" style="width:100%">
               <div class="caption">
                 <h3>{{ mars_data.title0 }}</h3>
               </div>
@@ -64,9 +117,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="thumbnail">
-            <a href="#" target="_blank">
-              <img src="{{ mars_data.img_url1 }}" alt="" style="width:100%">
+              <img src="{{ mars_data.hemisphere_image_urls[1]['img_url{0}'] }}" alt="" style="width:100%">
               <div class="caption">
                 <h3>{{ mars_data.title1 }}</h3>
               </div>
@@ -74,9 +125,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="thumbnail">
-            <a href="#" target="_blank">
-              <img src="{{ mars_data.img_url2 }}" alt="" style="width:100%">
+              <img src="{{ mars_data.hemisphere_image_urls[2]['img_url{0}'] }}" alt="" style="width:100%">
               <div class="caption">
                 <h3>{{ mars_data.title2 }}</h3>
               </div>
@@ -84,9 +133,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="thumbnail">
-            <a href="#" target="_blank">
-              <img src="{{ mars_data.img_url3 }}" alt="" style="width:100%">
+              <img src="{{ mars_data.hemisphere_image_urls[3]['img_url{0}'] }}" alt="" style="width:100%">
               <div class="caption">
                 <h3>{{ mars_data.title3 }}</h3>
               </div>
